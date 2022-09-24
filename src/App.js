@@ -23,10 +23,10 @@ export default function App() {
   };
 
   return (
-    <div className="container">
-      <div className="todoBlock">
-        <div className="title">
-          <h1>할 일 목록</h1>
+    <div className="flex items-center">
+      <div>
+        <div>
+          <h1 className="text-3xl font-bold underline">할 일 목록</h1>
         </div>
         <List todoData={todoData} setToDoData={setToDoData} />
 
