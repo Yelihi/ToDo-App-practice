@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import List from "./components/List";
+import Lists from "./components/Lists";
 import Form from "./components/Form";
 
 export default function App() {
@@ -23,12 +23,12 @@ export default function App() {
   };
 
   return (
-    <div className="flex items-center">
-      <div>
-        <div>
+    <div className="flex items-center justify-center w-screen h-screen bg-blue-200">
+      <div className="w-full p-6 m-4 bg-white rounded shadow lg:w-3/4 lg:max-w-lg">
+        <div className="flex justify-between mb-3">
           <h1 className="text-3xl font-bold underline">할 일 목록</h1>
         </div>
-        <List todoData={todoData} setToDoData={setToDoData} />
+        <Lists todoData={todoData} setToDoData={setToDoData} />
 
         <Form value={value} setValue={setValue} handleSubmit={handleSubmit} />
       </div>
