@@ -7,7 +7,7 @@
 
 - tailwind css
 - jest
-- react
+- react-beautiful-dnd
 
 
   <br />
